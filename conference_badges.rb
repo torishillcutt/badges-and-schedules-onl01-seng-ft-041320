@@ -15,8 +15,8 @@ def assign_rooms(array)
 end
 
 def printer(array)
-  print batch_badge_creator(array)
-  room_assignments = []
-  array.each_with_index {|attendee, index| room_assignments << "#{index + 1}"}
-  room_assignments
+  badges_and_room_assignments = []
+  badges_and_room_assignments << batch_badge_creator(array) << assign_rooms(array)
+  badges_and_room_assignments.each_line do |line|
+  end
 end
