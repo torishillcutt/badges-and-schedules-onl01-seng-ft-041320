@@ -7,3 +7,9 @@ def batch_badge_creator(array)
   array.each {|name| badge_messages << badge_maker(name)}
   badge_messages
 end
+
+def assign_rooms(array)
+  assign_array = []
+  array.each_with_index {|name, index| assign_array << "Hello, #{name}! You'll be assigned to room #{index}"}
+  assign_array
+end
