@@ -17,6 +17,6 @@ end
 def printer(array)
   badges_and_room_assignments = []
   badges_and_room_assignments << batch_badge_creator(array) << assign_rooms(array)
-  badges_and_room_assignments.each_line do |line|
+  badges_and_room_assignments.each do |line|
   end
 end
