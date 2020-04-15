@@ -17,6 +17,6 @@ end
 def printer(array)
   print batch_badge_creator(array)
   room_assignments = []
-  array.each_with_index {|attendee, index| room_assignments "#{attendee} #{index + 1}"}
+  array.each_with_index {|attendee, index| room_assignments << "#{index + 1}"}
   room_assignments
 end
